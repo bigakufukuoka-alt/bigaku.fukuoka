@@ -425,6 +425,24 @@ li { margin-bottom: 0.5em; }
   border-radius: 8px;
   padding: 26px 24px;
 }
+.ai-course-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 0 20px;
+}
+.ai-course-photos img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+.ai-course-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 .ai-course-name {
   font-family: var(--font-serif);
   font-size: 1.15rem;
