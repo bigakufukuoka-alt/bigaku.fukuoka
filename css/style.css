@@ -277,12 +277,13 @@ li { margin-bottom: 0.5em; }
   background: linear-gradient(160deg, #f3e6dd, #ecd9d6);
   border: 1px solid var(--color-border);
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-light);
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
+  overflow: hidden;
+}
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .profile-name {
@@ -415,6 +416,8 @@ li { margin-bottom: 0.5em; }
   margin: 0;
 }
 .course-price span { font-size: 0.8rem; margin-left: 2px; }
+.course-price-small { font-size: 1.1rem; }
+.course-cards-single { grid-template-columns: 1fr; max-width: 280px; }
 .course-footnote {
   font-size: 0.8rem;
   color: var(--color-text-light);
@@ -542,7 +545,17 @@ li { margin-bottom: 0.5em; }
   margin: 0;
 }
 .contact-info a { color: var(--color-primary-dark); }
-.sns-note { font-size: 0.8rem; }
+.sns-links {
+  display: flex;
+  gap: 18px;
+}
+.sns-links a {
+  color: var(--color-primary-dark);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 2px;
+}
+.sns-links a:hover { color: var(--color-primary); }
 
 /* ===========================
    Footer
@@ -556,8 +569,19 @@ li { margin-bottom: 0.5em; }
   font-family: var(--font-serif);
   letter-spacing: 0.15em;
   color: var(--color-primary-dark);
-  margin: 0 0 8px;
+  margin: 0 0 12px;
 }
+.footer-sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 0 14px;
+}
+.footer-sns a {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+.footer-sns a:hover { color: var(--color-primary-dark); }
 .footer-copy {
   font-size: 0.78rem;
   color: var(--color-text-light);
