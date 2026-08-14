@@ -416,8 +416,46 @@ li { margin-bottom: 0.5em; }
   margin: 0;
 }
 .course-price span { font-size: 0.8rem; margin-left: 2px; }
-.course-price-small { font-size: 1.1rem; }
-.course-cards-single { grid-template-columns: 1fr; max-width: 280px; }
+
+.ai-course-card {
+  max-width: 480px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 26px 24px;
+}
+.ai-course-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  margin: 0 0 18px;
+  color: var(--color-text);
+}
+.ai-course-details {
+  margin: 0 0 18px;
+}
+.ai-course-details div {
+  display: flex;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+.ai-course-details div:last-child { border-bottom: 1px solid var(--color-border); }
+.ai-course-details dt {
+  flex: 0 0 64px;
+  color: var(--color-primary-dark);
+  letter-spacing: 0.05em;
+}
+.ai-course-details dd {
+  margin: 0;
+  color: var(--color-text);
+}
+.ai-course-note {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin: 0 0 20px;
+}
 .course-footnote {
   font-size: 0.8rem;
   color: var(--color-text-light);
